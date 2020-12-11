@@ -1,0 +1,14 @@
+.idea
+python/flask-app
+venv
+__pycache__
+env
+*.db
+*.pyc
+db.config
+*.tfvars
+.terraform
+*.tfplan
+*.tfstate*
+*Pipfile*
+newrelic.ini
