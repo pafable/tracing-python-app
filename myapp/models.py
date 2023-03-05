@@ -9,10 +9,8 @@ def load_user(user_id):
 class User(db.Model, UserMixin):
     __tablename__ = 'user'
     id = db.Column('id', db.Integer, primary_key=True)
-    # username = db.Column('username', db.String(20), unique=True, nullable=False)
-    # email = db.Column('email', db.String(120), unique=True, nullable=False)
-    username = db.Column('username', db.String(20), nullable=False)
-    email = db.Column('email', db.String(120), nullable=False)    
+    username = db.Column('username', db.String(20), unique=True, nullable=False)
+    email = db.Column('email', db.String(120), unique=True, nullable=False)
     image_file = db.Column('image_file', db.String(20), nullable=False, default='default.jpg')
     password = db.Column('password', db.String(80), nullable=False)
     posts = db.relationship('Post', backref='author', lazy=True)
