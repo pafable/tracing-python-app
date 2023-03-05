@@ -3,9 +3,17 @@
 
 ------------------------------------
 ## Prerequistes
+### Create Virtual Environment
+```
+python3 -m venv <FOLDER-NAME>
+```
+### Activate Virtual Environment
+```
+source <FOLDER-NAME>/bin/activate
+```
 ### Install Python Packages
 ```
-pipenv install -r requirements.txt
+pip install -r requirements.txt
 ```
 ## Run app
 ```
